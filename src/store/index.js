@@ -5,12 +5,12 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    searchResults: []
+    searchResults: [],
   },
   mutations: {
     setSearchResults(state, payload) {
       state.searchResults = payload;
-    }
+    },
   },
   actions: {
     async getRandomRecipes({ commit }) {
